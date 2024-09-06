@@ -1,0 +1,409 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f2ef;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #0073b1;
+    padding: 15px 20px;
+    text-align: center;
+}
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+
+header {
+    color: #fff;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it stays on top of other content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Navigation Styling */
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+a:hover {
+    color: #eeff00;
+    text-decoration: underline;
+}
+a {
+    color: #0073b1;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+header nav a:hover {
+    background-color: #005a8a;
+    border-radius: 6px;
+    text-decoration: underline;
+}
+
+/* Content Layout */
+.content {
+    display: flex;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Sidebar */
+.sidebar {
+    width: 25%;
+    border-right: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.profile-card {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.profile-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.profile-card h2 {
+    font-size: 18px;
+    color: #0073b1;
+}
+
+.profile-card p {
+    font-size: 14px;
+    color: #666;
+}
+.sidebar .links a {
+    display: block;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #0073b1;
+    text-decoration: none;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+aside {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.sidebar .links a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+.main-content {
+    width: 75%;
+    padding-left: 20px;
+}
+
+.main-content h2 {
+    font-size: 24px;
+    color: #0073b1;
+    margin-bottom: 20px;
+}
+
+/* Story Grid */
+.story-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Story Card */
+.story-card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.story-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.story-card:hover {
+    transform: translateY(-5px);
+}
+
+.story-content {
+    padding: 20px;
+}
+
+.story-content h3 {
+    font-size: 20px;
+    color: #0073b1;
+    margin-bottom: 10px;
+}
+
+.story-content p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Submit Story Form */
+.submit-story {
+    margin-top: 40px;
+    padding: 30px;
+    background-color: #0073b1;
+    border-radius: 8px;
+    color: #fff;
+}
+
+.submit-story h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.submit-story form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.submit-story textarea {
+    padding: 15px;
+    border-radius: 6px;
+    border: none;
+    font-size: 16px;
+    resize: none;
+    height: 150px;
+}
+
+.submit-story button {
+    padding: 12px;
+    background-color: #fff;
+    color: #0073b1;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.submit-story button:hover {
+    background-color: #f3f2ef;
+}
+
+/* Footer */
+footer {
+    background-color: #0073b1;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #0073b1;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.header-container h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 25%;
+    background-color: #ffffff;
+    border-right: 1px solid #ddd;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-item {
+    margin-bottom: 15px;
+}
+
+.sidebar-item a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+.sidebar-item a:hover {
+    color: #0073b1;
+}
+
+.main-content {
+    width: 75%;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    width:100%;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+form input{
+    width: 30%;
+}
+form button {
+    padding: 10px 20px;
+    width: 20%;
+    background-color: #0073b1;
+    color: white;
+    border: none;
+    align-self: center;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #005a8c;
+}
+
+#storiesContainer {
+    margin-top: 20px;
+}
+
+.story {
+    background-color: #e6f2ff;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.story h3 {
+    margin-top: 0;
+}
+
+.story p {
+    margin-bottom: 5px;
+}
+/* ...existing styles... */
+
+.story {
+    background-color: #e6f2ff;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.story h3 {
+    margin-top: 0;
+}
+
+.story p {
+    margin-bottom: 5px;
+}
+
+.delete-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #cc0000;
+}
+
+
+.nav-buttons {
+    display: flex;
+}
+
+.nav-btn {
+    background-image: linear-gradient(rgb(255, 0, 0),rgb(255, 60, 60));
+    color: white;
+    border: none;
+    margin-left: 10px;
+    border-radius: 4px;
+    padding: auto;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.nav-btn:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+.profile-card a:hover{
+    color: #5732df;
+    text-decoration: none;
+
+}

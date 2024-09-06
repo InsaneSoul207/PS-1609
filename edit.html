@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="edit.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/home.html">Home</a>
+            <a href="/SucessStory.html">Success Stories</a>
+            <a href="/events.html">Events</a>
+            <a href="/donate.html">Donate</a>
+            <a href="/Job_Listing.html">Job Listings</a>
+            <div class="nav-buttons">
+                <a href="http://localhost:3011/register.html" class="nav-btn">Register</a>
+                <a href="/login.html" class="nav-btn">Login</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="content">
+        <aside class="sidebar">
+            <div class="profile-card">
+                <img src="images/profile.jpg" alt="Profile Picture">
+                <h2>Your Name</h2>
+                <p>Software Engineer at XYZ Corp</p>
+                <a href="/HTML/profile.html" class="edit-profile-btn">View Profile</a>
+            </div>
+            <div class="links">
+                <a href="/HTML/network.html">My Network</a>
+                <a href="/HTML/messages.html">Messages</a>
+                <a href="/notifications">Notifications</a>
+                <a href="/settings">Settings</a>
+            </div>
+        </aside>
+
+        <div class="main-content">
+            <h2>Edit Profile</h2>
+            <form action="/update-profile" method="post" class="profile-form">
+                <div class="profile-section">
+                    <h3>Personal Information</h3>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" value="Your Name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" value="youremail@example.com" required>
+
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" value="+1234567890">
+
+                    <label for="location">Location:</label>
+                    <input type="text" id="location" name="location" value="City, Country">
+                </div>
+
+                <div class="profile-section">
+                    <h3>Education & Work</h3>
+                    <label for="education">Education:</label>
+                    <input type="text" id="education" name="education" value="Government Engineering College, B.Tech">
+
+                    <label for="position">Current Position:</label>
+                    <input type="text" id="position" name="position" value="Software Engineer at XYZ Corp">
+
+                    <label for="experience">Previous Experience:</label>
+                    <textarea id="experience" name="experience">Previous job details...</textarea>
+                </div>
+
+                <div class="profile-section">
+                    <h3>Skills & Interests</h3>
+                    <label for="skills">Skills:</label>
+                    <input type="text" id="skills" name="skills" value="JavaScript, React, Node.js">
+
+                    <label for="interests">Interests:</label>
+                    <input type="text" id="interests" name="interests" value="Technology, Traveling, Reading">
+                </div>
+
+                <button type="submit" class="action-button">Save Changes</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Government Engineering College Alumni Association</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Alumni Association</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/home.html">Home</a>
+            <a href="/SucessStory.html">Success Stories</a>
+            <a href="/events.html">Events</a>
+            <a href="/donate.html">Donate</a>
+            <a href="/Job_Listing.html">Job Listings</a>
+            <div class="nav-buttons">
+                <a href="/register.html" class="nav-btn">Register</a>
+                <a href="/login.html" class="nav-btn">Login</a>
+            </div>
+        </nav>
+    </header>
+    
+
+    <div class="container">
+        <aside class="sidebar">
+            <div class="profile-card">
+                <img src="https://wallpapers.com/images/hd/pfp-pictures-ph6qxvz14p4uvj2j.jpg" alt="Profile Picture"><br>
+                <a href="/profile.html" class="edit-profile-btn">Eshaan Mishra</a>
+                <p>Software Engineer at XYZ Corp</p>
+                <button onclick="redirectToProfile()">Connect</button>
+            </div>
+            <div class="links">
+                <br>
+                <a href="/network.html">My Network</a>
+                <a href="/messages.html">Messages</a>
+                <button type="button" onclick="show()" id="btnID"> Notification</button>
+                <a href="/settings">Settings</a>
+            </div>
+        </aside>
+        <div id="card" onclick="hide_image('card');">
+            <div class="card-header">
+            Notification
+            </div>
+            <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+
+        <main class="main-content">
+            <div class="create-post">
+                <h2>Create a Post</h2>
+                <input type="text" placeholder="Post Title" class="post-title">
+                <textarea placeholder="What's on your mind?" class="post-content"></textarea>
+                <button class="post-button">Post</button>
+            </div>
+            <div class="posts">
+                <h2>Posts</h2>
+                <div class="post">
+                    <h3>Sample Post Title</h3>
+                    <p>This is a sample post content.</p>
+                </div>
+            </div>
+        </main>
+
+        <aside class="right-sidebar">
+            <div class="Alumini">
+                <button class="alumni-directory-btn" onclick="window.location.href='alumni-directory.html'">View Alumni Directory</button>
+            <br><br>
+            </div>
+            <div class="search-section">
+                <input type="text" id="newsSearch" placeholder="Search news..." onsubmit="searchNews()">
+            </div>
+
+            <div id="news-section">
+                <h2>Latest News</h2>
+                <div id="newsFeed"></div>
+            </div>
+        </aside>
+    </div>
+
+    <script src="home.js"></script>
+</body>
+</html>
+
+
+    

@@ -1,0 +1,1053 @@
+New Keyboard shortcuts … Drive keyboard shortcuts have been updated to give you first-letters navigation
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f3f2ef;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1, h2 {
+    color: #0073b1;
+    text-align: center;
+}
+
+a {
+    color: #0073b1;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Container Styles */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+header {
+    background-color: #0073b1;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+header a {
+    color: #fff;
+    font-size: 18px;
+    margin: 0 15px;
+    padding: 10px;
+}
+
+header a:hover {
+    background-color: #005582;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #0073b1;
+}
+.event h3 {
+    margin-top: 0;
+    color: #333;
+    text-align: center;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #f3f2ef;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus {
+    border-color: #0073b1;
+    outline: none;
+}
+
+button {
+    padding: 12px 15px;
+    border: none;
+    background-color: #0073b1;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #005582;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* List Styles */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 15px;
+    background-color: #0073b1;
+    color: white;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+li:hover {
+    background-color: #005582;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    header {
+        text-align: left;
+        padding: 15px;
+    }
+
+    header a {
+        display: block;
+        margin: 10px 0;
+    }
+}
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f3f2ef;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1, h2 {
+    color: #0073b1;
+    text-align: center;
+}
+
+a {
+    color: #0073b1;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+/* Header Styles */
+header {
+    background-color: #0073b1;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+header a {
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 15px;
+}
+
+/* Hero Section */
+.hero-section {
+    background-image: url('https://source.unsplash.com/1600x900/?education,network');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.hero-content {
+    z-index: 1;
+    max-width: 700px;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.hero-content a {
+    background-color: #0073b1;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-content a:hover {
+    background-color: #005582;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Features Section */
+.features-section {
+    background-color: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.features-section h2 {
+    margin-bottom: 40px;
+    font-size: 36px;
+}
+
+.feature {
+    display: inline-block;
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+    background-color: #f3f2ef;
+    padding: 20px;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease;
+}
+
+.feature:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.feature img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.feature h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #0073b1;
+}
+
+.feature p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #0073b1;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+    }
+
+    .feature {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f3f2ef;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1, h2 {
+    color: #0073b1;
+    text-align: center;
+}
+
+a {
+    color: #0073b1;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+/* Header Styles */
+header {
+    background-color: #0073b1;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+header a {
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 15px;
+}
+
+header a:hover {
+    background-color: #005582;
+    border-radius: 6px;
+}
+
+/* Donation Page Styles */
+.donation-section {
+    background-color: #ffffff;
+    padding: 50px 20px;
+    max-width: 700px;
+    margin: 80px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.donation-section h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #0073b1;
+}
+
+.donation-section p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.donation-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.donation-form label {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #0073b1;
+    align-self: flex-start;
+}
+
+.donation-form input[type="text"],
+.donation-form input[type="email"],
+.donation-form input[type="number"] {
+    padding: 12px;
+    margin-bottom: 20px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #f3f2ef;
+    transition: border-color 0.3s ease;
+}
+
+.donation-form input[type="text"]:focus,
+.donation-form input[type="email"]:focus,
+.donation-form input[type="number"]:focus {
+    border-color: #0073b1;
+    outline: none;
+}
+
+.donation-form button {
+    padding: 14px 28px;
+    border: none;
+    background-color: #0073b1;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+}
+
+.donation-form button:hover {
+    background-color: #005582;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Success Message */
+.success-message {
+    padding: 20px;
+    background-color: #dff0d8;
+    color: #3c763d;
+    border: 1px solid #d6e9c6;
+    border-radius: 6px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .donation-section {
+        width: 90%;
+        margin: 100px auto;
+    }
+
+    .donation-section h2 {
+        font-size: 28px;
+    }
+
+    .donation-form button {
+        font-size: 16px;
+    }
+}
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f3f2ef;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1, h2 {
+    color: #0073b1;
+    text-align: center;
+}
+
+a {
+    color: #0073b1;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Header Styles */
+header {
+    background-color: #0073b1;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+header a {
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 15px;
+}
+
+header a:hover {
+    background-color: #005582;
+    border-radius: 6px;
+}
+
+/* Registration Page Styles */
+.registration-section {
+    background-color: #ffffff;
+    padding: 50px 20px;
+    max-width: 700px;
+    margin: 80px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.registration-section h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #0073b1;
+}
+
+.registration-section p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.registration-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.registration-form label {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #0073b1;
+    align-self: flex-start;
+}
+
+.registration-form input[type="text"],
+.registration-form input[type="email"],
+.registration-form input[type="password"],
+.registration-form input[type="tel"],
+.registration-form input[type="date"] {
+    padding: 12px;
+    margin-bottom: 20px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #f3f2ef;
+    transition: border-color 0.3s ease;
+}
+
+.registration-form input[type="text"]:focus,
+.registration-form input[type="email"]:focus,
+.registration-form input[type="password"]:focus,
+.registration-form input[type="tel"]:focus,
+.registration-form input[type="date"]:focus {
+    border-color: #0073b1;
+    outline: none;
+}
+
+.registration-form button {
+    padding: 14px 28px;
+    border: none;
+    background-color: #0073b1;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+}
+
+.registration-form button:hover {
+    background-color: #005582;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Success Message */
+.success-message {
+    padding: 20px;
+    background-color: #dff0d8;
+    color: #3c763d;
+    border: 1px solid #d6e9c6;
+    border-radius: 6px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Error Message */
+.error-message {
+    padding: 20px;
+    background-color: #f2dede;
+    color: #a94442;
+    border: 1px solid #ebccd1;
+    border-radius: 6px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .registration-section {
+        width: 90%;
+        margin: 100px auto;
+    }
+
+    .registration-section h2 {
+        font-size: 28px;
+    }
+
+    .registration-form button {
+        font-size: 16px;
+    }
+}
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f3f2ef;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1, h2 {
+    color: #0073b1;
+    text-align: center;
+}
+
+a {
+    color: #0073b1;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #eeff00;
+}
+
+/* Header Styles */
+header {
+    background-color: #0073b1;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+header a {
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 15px;
+}
+
+header a:hover {
+    background-color: #005582;
+    border-radius: 6px;
+}
+
+/* Login Page Styles */
+.login-section {
+    background-color: #ffffff;
+    padding: 50px 20px;
+    max-width: 500px;
+    margin: 80px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.login-section h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #0073b1;
+}
+
+.login-section p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-form label {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #0073b1;
+    align-self: flex-start;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+    padding: 12px;
+    margin-bottom: 20px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #f3f2ef;
+    transition: border-color 0.3s ease;
+}
+
+.login-form input[type="email"]:focus,
+.login-form input[type="password"]:focus {
+    border-color: #0073b1;
+    outline: none;
+}
+
+.login-form button {
+    padding: 14px 28px;
+    border: none;
+    background-color: #0073b1;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+}
+
+.login-form button:hover {
+    background-color: #005582;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Error Message */
+.error-message {
+    padding: 20px;
+    background-color: #f2dede;
+    color: #a94442;
+    border: 1px solid #ebccd1;
+    border-radius: 6px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .login-section {
+        width: 90%;
+        margin: 100px auto;
+    }
+
+    .login-section h2 {
+        font-size: 28px;
+    }
+
+    .login-form button {
+        font-size: 16px;
+    }
+}
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f3f2ef;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1, h2 {
+    color: #0073b1;
+    text-align: center;
+}
+
+a {
+    color: #0073b1;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #eeff00;
+}
+
+/* Header Styles */
+header {
+    background-color: #0073b1;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+header a {
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 15px;
+}
+
+header a:hover {
+    background-color: #005582;
+    border-radius: 6px;
+}
+
+/* Events Page Styles */
+.events-section {
+    background-color: #ffffff;
+    padding: 50px 20px;
+    max-width: 900px;
+    margin: 80px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.events-section h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #0073b1;
+}
+
+.events-section p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.event-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.event-card h3 {
+    font-size: 24px;
+    color: #0073b1;
+    margin-bottom: 10px;
+}
+
+.event-card p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.event-card span {
+    display: block;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.event-card a {
+    color: #0073b1;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.event-card a:hover {
+    color: #005582;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .events-section {
+        width: 90%;
+        margin: 100px auto;
+    }
+
+    .events-section h2 {
+        font-size: 28px;
+    }
+
+    .event-card h3 {
+        font-size: 22px;
+    }
+
+    .event-card p {
+        font-size: 14px;
+    }
+}
+/* Sidebar styles */
+.sidebar {
+    width: 20%;
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.sidebar-item {
+    margin-bottom: 15px;
+}
+
+.sidebar-item a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.sidebar-item a:hover {
+    color: #0073b1; 
+}
+
+/* Main content area styles */
+.main-content {
+    width: 95%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Center the form */
+form {
+    margin-bottom: 30px;
+    width: 75%;
+    
+    max-width: 1000px; 
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #0073b1;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #0073b1;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 20%;
+    margin-right: 40%;
+    margin-left: 40%;
+}
+
+form button:hover {
+    background-color: #005a8b;
+}
+
+/* Event card styles */
+.event {
+    background-color: #e6f2ff;
+    
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.event h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.event p {
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.deletion-btn{
+    background-color: #ff0000;
+    position: relative;
+    cursor: pointer;
+}
+.deletion-btn:hover{
+    background-color: #cc0000;
+}
+
+.nav-buttons {
+    display: flex;
+    color: linear-gradient(rgb(255, 0, 0),rgb(76, 96, 142));
+}
+
+.nav-btn {
+    background-image: linear-gradient(rgb(255, 0, 0),rgb(255, 60, 60));
+    color: white;
+    border: none;
+    margin-left: 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.nav-btn:hover {
+    background-color: #0056b3;
+    color: white;
+}

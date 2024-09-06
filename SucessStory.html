@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success Stories</title>
+    <link rel="stylesheet" href="Storystyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/home.html">Home</a>
+            <a href="/SucessStory.html">Success Stories</a>
+            <a href="/events.html">Events</a>
+            <a href="/donate.html">Donate</a>
+            <a href="/Job_Listing.html">Job Listings</a>
+            <div class="nav-buttons">
+                <a href="http://localhost:3011/register.html" class="nav-btn">Register</a>
+                <a href="/login.html" class="nav-btn">Login</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="content">
+        <aside class="sidebar">
+            <div class="profile-card">
+                <img src="https://wallpapers.com/images/hd/pfp-pictures-ph6qxvz14p4uvj2j.jpg" alt="Profile Picture"><br>
+                <a href="/profile.html" class="edit-profile-btn">Eshaan Mishra</a><br>
+                <p>Software Engineer at XYZ Corp</p>
+                
+            </div>
+            <div class="links">
+                <br>
+                <a href="/HTML/network.html">My Network</a>
+                <a href="/HTML/messages.html">Messages</a>
+                <a href="/notifications">Notifications</a>
+                <a href="/settings">Settings</a>
+            </div>
+        </aside>
+            <main class="main-content">
+                <h2>Share Your Success Story</h2>
+                <form id="successStoryForm">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+    
+                    <label for="title">Story Title:</label>
+                    <input type="text" id="title" name="title" required>
+    
+                    <label for="story">Your Success Story:</label>
+                    <textarea id="story" name="story" required></textarea>
+    
+                    <button type="submit">Submit Story</button>
+                </form>
+    
+                <h2>Success Stories</h2>
+                <div id="storiesContainer">
+                </div>
+            </main>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Government Engineering College Alumni Association</p>
+    </footer>
+
+    <script src="Storyscript.js"></script>
+</body>
+</html>

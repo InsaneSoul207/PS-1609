@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="/home.html">Home</a>
+            <a href="/SucessStory.html">Success Stories</a>
+            <a href="/events.html">Events</a>
+            <a href="/donate.html">Donate</a>
+            <a href="/Job_Listing.html">Job Listings</a>
+            <div class="nav-buttons">
+                <a href="/register.html" class="nav-btn">Register</a>
+                <a href="/login.html" class="nav-btn">Login</a>
+            </div>
+        </nav>
+    </header>
+    
+    <section class="registration-section">
+        <h2>Create Your Account</h2>
+        <p>Fill out the form below to join our alumni network and start connecting with fellow graduates.</p>
+
+        
+        <form action = "/post" class="registration-form" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter your full name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" placeholder="Create a password" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" name="phone" id="phone" placeholder="Enter your phone number" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" name="dob" id="dob" required>
+
+            <button type="submit" >Register</button>
+        </form>
+    </section>
+
+   
+    <footer>
+        <p>&copy; 2024 Government Engineering College Alumni Association</p>
+    </footer>
+</body>
+</html>

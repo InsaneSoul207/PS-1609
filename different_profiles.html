@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profiles</title>
+    <link rel="stylesheet" href="profiles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/home.html">Home</a>
+            <a href="/SucessStory.html">Success Stories</a>
+            <a href="/events.html">Events</a>
+            <a href="/donate.html">Donate</a>
+            <a href="/Job_Listing.html">Job Listings</a>
+            <a href="http://localhost:3011/register.html" class="nav-btn">Register</a>
+                <a href="/login.html" class="nav-btn">Login</a>
+        </nav>
+    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="profile-card">
+                <img src="https://wallpapers.com/images/hd/pfp-pictures-ph6qxvz14p4uvj2j.jpg" alt="Profile Picture">
+                <h2>Your Name</h2>
+                <p>Software Engineer at XYZ Corp</p>
+                <a href="/profile.html" class="edit-profile-btn">View Profile</a>
+            </div>
+            <div class="links">
+                <a href="/network.html">My Network</a>
+                <a href="/HTML/messages.html">Messages</a>
+                <a href="/notifications">Notifications</a>
+                <a href="/settings">Settings</a>
+            </div>
+        </aside>
+
+    <div class="profiles-container">
+        <h2>Connect with People</h2>
+        <div id="profiles-list">
+        </div>
+    </div>
+
+    <script src="fetchProfiles.js"></script>
+</body>
+</html>

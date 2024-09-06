@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages</title>
+    <link rel="stylesheet" href="messagestyle.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="/home.html">Home</a>
+            <a href="/SucessStory.html">Success Stories</a>
+            <a href="/events.html">Events</a>
+            <a href="/donate.html">Donate</a>
+            <a href="/Job_Listing.html">Job Listings</a>
+            <div class="nav-buttons">
+                <a href="http://localhost:3011/register.html" class="nav-btn">Register</a>
+                <a href="/login.html" class="nav-btn">Login</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <section class="content">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="profile-card">
+                <img src="images/profile.jpg" alt="Profile Picture">
+                <h2>Your Name</h2>
+                <p>Software Engineer at XYZ Corp</p>
+                <a href="/HTML/profile.html" class="edit-profile-btn">View Profile</a>
+            </div>
+            <div class="links">
+                <a href="/HTML/network.html">My Network</a>
+                <a href="/HTML/messages.html">Messages</a>
+                <a href="/notifications">Notifications</a>
+                <a href="/settings">Settings</a>
+            </div>
+        </aside>
+
+        <!-- Messages Content -->
+        <div class="main-content messages-content">
+            <div class="message-list">
+                <h2>Messages</h2>
+                <ul id="chatList">
+                    <li class="chat-item active" data-chat="chat1">
+                        <img src="images/user1.jpg" alt="User 1">
+                        <div class="message-info">
+                            <h3>John Doe</h3>
+                            <p>Hey, how are you doing?</p>
+                        </div>
+                    </li>
+                    <li class="chat-item" data-chat="chat2">
+                        <img src="images/user2.jpg" alt="User 2">
+                        <div class="message-info">
+                            <h3>Jane Smith</h3>
+                            <p>Are you attending the alumni event?</p>
+                        </div>
+                    </li>
+                    <!-- Add more chat items here -->
+                </ul>
+            </div>
+            <div class="chat-window">
+                <div id="chat1" class="chat-content active">
+                    <div class="chat-header">
+                        <img src="images/user1.jpg" alt="User 1">
+                        <h3>John Doe</h3>
+                    </div>
+                    <div class="chat-messages">
+                        <div class="message received">
+                            <p>Hey, how are you doing?</p>
+                            <span class="time">10:30 AM</span>
+                        </div>
+                        <div class="message sent">
+                            <p>I'm good, thanks! How about you?</p>
+                            <span class="time">10:32 AM</span>
+                        </div>
+                        <!-- Add more messages here -->
+                    </div>
+                </div>
+                <div id="chat2" class="chat-content">
+                    <div class="chat-header">
+                        <img src="images/user2.jpg" alt="User 2">
+                        <h3>Jane Smith</h3>
+                    </div>
+                    <div class="chat-messages">
+                        <div class="message received">
+                            <p>Are you attending the alumni event?</p>
+                            <span class="time">12:15 PM</span>
+                        </div>
+                        <div class="message sent">
+                            <p>Yes, I am! Looking forward to it.</p>
+                            <span class="time">12:18 PM</span>
+                        </div>
+                        <!-- Add more messages here -->
+                    </div>
+                </div>
+
+                <div class="chat-input">
+                    <input type="text" placeholder="Type a message..." id="messageInput1">
+                    <button type="button" onclick="sendMessage('messageInput1', 'chat1')">Send</button>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Government Engineering College Alumni Association</p>
+    </footer>
+
+    <script src="chat.js"></script>
+</body>
+</html>

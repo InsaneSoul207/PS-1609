@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Job Portal</title>
+    <link rel="stylesheet" href="job.css">
+    <script src="https://www.gstatic.com/firebasejs/9.9.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.9.3/firebase-firestore.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/home.html">Home</a>
+            <a href="/SucessStory.html">Success Stories</a>
+            <a href="/events.html">Events</a>
+            <a href="/donate.html">Donate</a>
+            <a href="/Job_Listing.html">Job Listings</a>
+            <div class="nav-buttons">
+                <a href="http://localhost:3011/register.html" class="nav-btn">Register</a>
+                <a href="/login.html" class="nav-btn">Login</a>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="profile-card">
+                <img src="https://wallpapers.com/images/hd/pfp-pictures-ph6qxvz14p4uvj2j.jpg" alt="Profile Picture">
+                <h2>Your Name</h2>
+                <p>Software Engineer at XYZ Corp</p>
+                <a href="/profile.html" class="edit-profile-btn">View Profile</a><br><br>
+                <button onclick="redirectToProfile()">Connect</button>
+            </div>
+            <div class="links">
+                <br>
+                <a href="/network.html">My Network</a>
+                <a href="/messages.html">Messages</a>
+                <a href="/notifications">Notifications</a>
+                <a href="/settings">Settings</a>
+            </div>
+        </aside>
+
+        <div class="main-content">
+            <h1>Job Listings</h1>
+            <div class="job-listings">
+                <div class="Jobs">
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="right-sidebar">
+            <h3>Post a Job</h3>
+            <form id="post-job-form">
+                <input type="text" id="job-title" placeholder="Job Title" required>
+                <input type="text" id="company" placeholder="Company Name" required>
+                <input type="text" id="location" placeholder="Location" required>
+                <input type="text" id="experience" placeholder="Experience Required" required>
+                <button type="submit" class="post-btn">Post Job</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="job.js"></script>
+</body>
+</html>

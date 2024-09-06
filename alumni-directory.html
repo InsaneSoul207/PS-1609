@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Directory</title>
+    <link rel="stylesheet" href="alumini.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/home.html">Home</a>
+            <a href="/SucessStory.html">Success Stories</a>
+            <a href="/events.html">Events</a>
+            <a href="/donate.html">Donate</a>
+            <a href="/Job_Listing.html">Job Listings</a>
+            <div class="nav-buttons">
+                <a href="http://localhost:3011/register.html" class="nav-btn">Register</a>
+                <a href="/login.html" class="nav-btn">Login</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <div class="profile-card">
+                <img src="https://wallpapers.com/images/hd/pfp-pictures-ph6qxvz14p4uvj2j.jpg" alt="Profile Picture">
+                <h2>Your Name</h2>
+                <p>Software Engineer at XYZ Corp</p>
+                <a href="/profile.html" class="edit-profile-btn">View Profile</a><br><br>
+                <button onclick="redirectToProfile()">Connect</button>
+            </div>
+            <div class="links">
+                <br>
+                <a href="/network.html">My Network</a>
+                <a href="/messages.html">Messages</a>
+                <button type="button" onclick="show()" id="btnID"> Notification</button>
+                <a href="/settings">Settings</a>
+            </div>
+        </aside>
+
+        <div class="main-content">
+            <h1>Alumni Directory</h1>
+            <div class="filter-container">
+                <select id="collegeFilter" onchange="filterProfiles()">
+                    <option value="">All Colleges</option>
+                    <option value="IIIT-Gandhinagar">IIIT-Gandhinagar</option>
+                    <option value="Sardar Vallabhbhai National Institute of Technology">Sardar Vallabhbhai National Institute of Technology</option>
+                    <option value="DA-IICT">DA-IICT</option>
+                    <option value="Birla Vishvakarma Mahavidyalaya (Engineering college)">Birla Vishvakarma Mahavidyalaya (Engineering college)</option>
+                    <option value="Dharamsin Desai University">Dharamsin Desai University</option>
+                    <option value="Institute of Technology, Nirma University">Institute of Technology, Nirma University</option>
+                    <option value="Faculty of Tech & Engineering, MS University">Faculty of Tech & Engineering, MS University</option>
+                    <option value="LD College of Engineering">LD College of Engineering</option>
+                    <option value="CK Pithawalla College of Engineering and Technology">CK Pithawalla College of Engineering and Technology</option>
+                    <option value="GH Patel College of Engineering  ">GH Patel College of Engineering  </option>
+
+                </select>                
+                <select id="degreeFilter" onchange="filterProfiles()">
+                    <option value="">All Degrees</option>
+                    <option value="B.Tech">B.Tech</option>
+                    <option value="M.Tech">M.Tech</option>
+                    <option value="B.E.">B.E.</option>
+                    <option value="M.E.">M.E.</option>
+                    <option value="Ph.D.">Ph.D.</option>
+                    <option value="Diploma">Diploma</option>
+                    <option value="B.Sc.">B.Sc.</option>
+                    <option value="M.Sc.">M.Sc.</option>
+                    <option value="MBA">MBA</option>
+                    <option value="MCA">MCA</option>
+                    <option value="BCA">BCA</option>
+                </select>
+
+                <select id="yearFilter" onchange="filterProfiles()">
+                    <option value="">All Years</option>
+                    <option value="2024">2024</option>
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                    <option value="2019">2019</option>
+                    <option value="2018">2018</option>
+                    <option value="2017">2017</option>
+                    <option value="2016">2016</option>
+                    <option value="2015">2015</option>
+                    <option value="2014">2014</option>
+                    <option value="2013">2013</option>
+                    <option value="2012">2012</option>
+                    <option value="2011">2011</option>
+                    <option value="2010">2010</option>
+                    <option value="2009">2009</option>
+                    <option value="2008">2008</option>
+                    <option value="2007">2007</option>
+                    <option value="2006">2006</option>
+                </select>
+            </div>
+            
+            <div id="alumni-container">
+            </div>
+        </div>
+        
+
+        
+    </div>
+</div>
+    <script src="alumini.js"></script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f3f2ef;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1, h2 {
+    color: #0073b1;
+}
+
+a {
+    color: #0073b1;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #eeff00;
+    text-decoration: underline;
+}
+
+/* Header */
+header {
+    background-color: #0073b1;
+    padding: 15px 20px;
+    text-align: center;
+}
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+
+
+a:hover {
+    color: #eeff00;
+    text-decoration: underline;
+}
+a {
+    color: #0073b1;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+header nav a:hover {
+    background-color: #005a8a;
+    border-radius: 6px;
+    text-decoration: underline;
+}
+
+/* Donation Campaigns Section */
+.donation-campaigns {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.donation-campaigns h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.campaigns-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Campaign Card Styles */
+.campaign-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.campaign-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.campaign-card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.campaign-card p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.goal-container {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.progress {
+    height: 100%;
+    background-color: #0073b1;
+    border-radius: 10px 0 0 10px;
+}
+
+.donate-button {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #0073b1;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.donate-button:hover {
+    background-color: #005582;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .campaigns-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.nav-buttons {
+    display: flex;
+    color: linear-gradient(rgb(255, 0, 0),rgb(76, 96, 142));
+}
+
+.nav-btn {
+    background-image: linear-gradient(rgb(255, 0, 0),rgb(255, 60, 60));
+    color: white;
+    border: none;
+    margin-left: 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.nav-btn:hover {
+    background-color: #0056b3;
+    color: white;
+}
